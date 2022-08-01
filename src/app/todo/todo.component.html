@@ -1,0 +1,32 @@
+<div class="todos">
+    
+      <input
+        class="todo-input"
+        placeholder="Enter the item"
+        [(ngModel)]="newitem"
+      />
+      <input
+        class="todo-input"
+        placeholder="Enter the description"
+        [(ngModel)]="newitemdescription"
+      />
+      <input
+        type="submit"
+        class="input-submit"
+        value="Add Item"
+        (click)="additem()"
+      />
+
+    <div
+      *ngFor="let todo of todos; let i = index"
+      class="todo {{ todo.picked ? 'done' : '' }}"
+    >
+      <div class="id">{{ i + 1 }}</div>
+      <div class="item" (click)="itempicked(i)">{{ todo.item }}</div>
+      <div class="desp" (click)="itempicked(i)">{{ todo.description }}</div>
+      <div class="time" (click)="itempicked(i)">{{ todo.time }}</div>
+      <div class = "delete-col"><button class="delete" (click)="deleteitem(i)">Delete</button></div>
+    </div>
+  </div>
+  
+  

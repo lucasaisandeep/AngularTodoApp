@@ -1,0 +1,85 @@
+.todo {
+    display: flex;
+    padding: 10px 15px 20px 40px;
+    background-color: #fff;
+    border-bottom: 1px solid whitesmoke;
+  }
+  
+
+  
+ 
+  
+  .todo .id {
+    width: 10%;
+  }
+  
+  .todo .item {
+
+    width: 25%;
+    padding: 0 15px;
+  }
+  .todo .desp {
+  
+    width:25%;
+    padding: 0 15px;
+  }
+  .todo .time {
+  
+    width: 25%;
+    padding: 0 15px;
+  }
+
+  .todo .delete-col{
+      display: flex;
+      justify-content: flex-end;
+      width: 15%;
+  }
+
+  .todo .delete-col .delete{
+      width: 100px;
+      max-height: 30px;
+  }
+  
+  .todo.done .item {
+    text-decoration: line-through;
+    color: gray;
+  }
+  .todo.done .id {
+    
+    color: gray;
+  }
+  .todo.done .desp {
+    color: gray;
+  }
+  .todo.done .time {
+    color: gray;
+  }
+  
+ 
+  
+  .todo-input {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    background-color: whitesmoke;
+    margin-top: 15px;
+    font-size: 17px;
+    outline: none;
+  }
+  
+  .input-submit {
+    display: flex;
+    appearance: none;
+    border: none;
+  
+    background-color: #fe4880;
+    color: #fff;
+    margin: 15px auto;
+  
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+
+  
